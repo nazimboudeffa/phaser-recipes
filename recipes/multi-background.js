@@ -3,10 +3,11 @@ game = new Phaser.Game(620, 272, Phaser.AUTO, 'phaser-recipe', { preload: preloa
 var cursors
 
 function preload(){
-  game.load.image("bg20", "assets/bg20.png"),
-  game.load.image("bg21", "assets/bg21.png"),
-  game.load.image("bg22", "assets/bg22.png"),
-  game.load.image("bg23", "assets/bg23.png")
+  this.load.crossOrigin = 'anonymous';
+  game.load.image("bg20", "assets/images/bg20.png"),
+  game.load.image("bg21", "assets/images/bg21.png"),
+  game.load.image("bg22", "assets/images/bg22.png"),
+  game.load.image("bg23", "assets/images/bg23.png")
 }
 
 function create(){

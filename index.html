@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<title>Phaser Recipe</title>
+  <meta name="viewport" content="initial-scale=1 user-scalable=no" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/phaser-ce@2.12.0/build/phaser.js"></script>
+  </head>
+<body>
+<div>
+	<a href="#" class="selector">multi-background</a>
+	<br>
+	<a href="#" class="selector">rain-effect</a>
+	<br>
+	<a href="#" class="selector">snow-effect</a>
+</div>
+	<script type="text/javascript">
+		$('.selector').click(function(){
+		  $.getScript('recipes/' + $(this).text() + '.js');
+		});
+	</script>
+
+	<div id="phaser-recipe"></div>
+
+</body>
+
+</html>
